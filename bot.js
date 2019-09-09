@@ -1,10 +1,6 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
 
-const token = 'NjIwNDMxMTQ4NzQ0NTcyOTU1.XXW0IA.L6hP7W37zwPn-VRSf6NO_JoKr9w';
-
-const PREFIX = '!';
-
 bot.on('ready', () => {
     console.log('This bot is online!');
 })
