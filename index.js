@@ -1,8 +1,6 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
 
-const token = 'NjIwNDMxMTQ4NzQ0NTcyOTU1.XXXCvw.tFzz10lkAkAfQFwolc7d5g021Bg';
-
 const PREFIX = '!';
 
 var replies = [];
