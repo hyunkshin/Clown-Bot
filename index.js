@@ -28,7 +28,7 @@ bot.on('message', message=>{
     
     if (msg.includes("steph")) {
         
-        message.channel.send(message.author + " that's my mom you're talking about!");
+        message.channel.send(message.author + " that's my mom!");
         
     }
 
