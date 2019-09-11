@@ -26,12 +26,6 @@ bot.on('message', message=>{
         message.channel.send(text);
     }
     
-    if (msg.includes("stephanie")) {
-        
-        message.channel.send(message.author + " that's my mom you're talking about!");
-        
-    }
-    
     if (msg.includes("steph")) {
         
         message.channel.send(message.author + " that's my mom you're talking about!");
