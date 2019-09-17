@@ -32,7 +32,7 @@ bot.on('message', message=>{
     
     if (message.content === "i love you clownbot"){
         
-        message.react(:clown:);
+        message.react('🤡');
         
     }
 
