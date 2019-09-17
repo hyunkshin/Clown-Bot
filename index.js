@@ -29,6 +29,12 @@ bot.on('message', message=>{
         message.channel.send(message.author + " that's my mom!");
         
     }
+    
+    if (message.content === "i love you clownbot"){
+        
+        message.react(:clown:);
+        
+    }
 
 })
 
