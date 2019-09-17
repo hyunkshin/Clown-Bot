@@ -22,7 +22,7 @@ bot.on('message', message=>{
         
     }
 
-    else if (msg.includes("clown")) {
+    if (msg.includes("clown")) {
 
         num = Math.floor(Math.random() * replies.length);
         var text = replies[num];
