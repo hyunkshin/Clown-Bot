@@ -16,7 +16,7 @@ bot.on('ready', () => {
 bot.on('message', message=>{
     msg = message.content.toLowerCase();
     
-    if (message.content === "i love you clownbot"){
+    if (msg.content === "i love you clownbot"){
         
         message.react('💖');
         
