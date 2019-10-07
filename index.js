@@ -6,6 +6,7 @@ const PREFIX = '!';
 var replies = [];
 var fs = require('fs');
 var replies = fs.readFileSync('messages.txt').toString().split("\n");
+var answers = fs.readFileSync('answers.txt').toString().split("\n");
 
 //message.author
 
@@ -18,15 +19,21 @@ bot.on('message', message=>{
     msg = message.content.toLowerCase();
 
     if(message.author.bot) return;
-
-    else if (msg.includes("clown")) {
+    
+    else if (msg.includes(prefix + "ping")) {
+        
+        num = Math.floor(Math.random() * answers.length);
+        var text = answers[num];
+        
+        message.channel.send(message.author + ", " text);
+        
+    } else if (msg.includes("clown")) {
 
         num = Math.floor(Math.random() * replies.length);
         var text = replies[num];
             
-        message.channel.send(message.author + " " + text);
+        message.channel.send(text);
     }
-
 })
 
 bot.login(process.env.token);
