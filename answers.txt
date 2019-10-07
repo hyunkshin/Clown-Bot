@@ -1,0 +1,9 @@
+yes
+no
+maybe
+ask again later
+don't count on it
+most likely
+very doubtful
+without a doubt
+cannot predict now
