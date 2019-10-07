@@ -20,7 +20,7 @@ bot.on('message', message=>{
 
     if(message.author.bot) return;
     
-    else if (msg.includes(prefix + "ping")) {
+    else if (msg.includes(prefix + "answer")) {
         
         num = Math.floor(Math.random() * answers.length);
         var text = answers[num];
