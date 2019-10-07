@@ -37,7 +37,7 @@ bot.on('message', message=>{
         
         if (msg.includes("steph")) {
             
-            message.channel.react('💗');
+            message.react('💗');
         }    
     }
 })
