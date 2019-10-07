@@ -14,26 +14,23 @@ bot.on('ready', () => {
 })
 
 bot.on('message', message=>{
-    msg = message.content.toLowerCase();
     
-    if (msg.content === "i love you clownbot"){
+    msg = message.content.toLowerCase();
+
+    if(message.author.bot) return;
+        
+    else if (msg.content === "i love you clownbot"){
         
         message.react('💖');
         
     }
 
-    if (msg.includes("clown")) {
+    else if (msg.includes("clown")) {
 
         num = Math.floor(Math.random() * replies.length);
         var text = replies[num];
             
         message.channel.send(text);
-    }
-    
-    if (msg.includes("steph")) {
-        
-        message.channel.send(message.author + " that's my mom!");
-        
     }
 
 })
