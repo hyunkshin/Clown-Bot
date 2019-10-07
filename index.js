@@ -24,7 +24,7 @@ bot.on('message', message=>{
         num = Math.floor(Math.random() * replies.length);
         var text = replies[num];
             
-        message.channel.send(text);
+        message.channel.send(message.author + " " + text);
     }
 
 })
