@@ -18,12 +18,6 @@ bot.on('message', message=>{
     msg = message.content.toLowerCase();
 
     if(message.author.bot) return;
-        
-    else if (msg.content === "i love you clownbot"){
-        
-        message.react('💖');
-        
-    }
 
     else if (msg.includes("clown")) {
 
