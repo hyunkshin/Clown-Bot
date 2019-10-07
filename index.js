@@ -20,7 +20,7 @@ bot.on('message', message=>{
 
     if(message.author.bot) return;
     
-    else if (msg.includes(prefix + "answer")) {
+    else if (msg.includes(PREFIX + "answer")) {
         
         num = Math.floor(Math.random() * answers.length);
         var text = answers[num];
