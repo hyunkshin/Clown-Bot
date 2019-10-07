@@ -27,12 +27,18 @@ bot.on('message', message=>{
         
         message.channel.send(message.author + ", " + text);
         
-    } else if (msg.includes("clown")) {
+    } else {
+        if (msg.includes("clown")) {
+            num = Math.floor(Math.random() * replies.length);
+            var text = replies[num];
 
-        num = Math.floor(Math.random() * replies.length);
-        var text = replies[num];
+            message.channel.send(text);
+        }
+        
+        if (msg.includes("steph")) {
             
-        message.channel.send(text);
+            message.channel.react('💗');
+        }    
     }
 })
 
