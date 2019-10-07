@@ -25,7 +25,7 @@ bot.on('message', message=>{
         num = Math.floor(Math.random() * answers.length);
         var text = answers[num];
         
-        message.channel.send(message.author + ", " text);
+        message.channel.send(message.author + ", " + text);
         
     } else if (msg.includes("clown")) {
 
