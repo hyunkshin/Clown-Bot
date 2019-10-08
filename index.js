@@ -22,7 +22,7 @@ bot.on('message', message=>{
     
     else if (msg.includes(PREFIX + "answer")) {
         
-        num = Math.floor(Math.random() * answers.length);
+        num = (Math.random() * answers.length) % answers.length;
         var text = answers[num];
         
         message.channel.send(message.author + ", " + text);
